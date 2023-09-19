@@ -1,0 +1,299 @@
+/* start main rules  */
+:root {
+    --main-color: #f0cd40;
+    /* --main-color: #ffe600d5; */
+    --bg-body : #f5f5f5;
+    --transition-duration-5: 0.5s ;
+    --transition-duration-1: 1s ;
+}
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    background-color: var(--bg-body);
+}
+.transition-du-5 {
+    transition: var(--transition-duration-5);
+}
+.transition-du-1 {
+    transition: var(--transition-duration-1);
+}
+.special-heading::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: var(--main-color);
+}
+/* end main rules  */
+/* start navbar  */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    transition: var(--transition-duration-5)
+}
+.nav-link:hover::before, .active::before {
+    width: 2rem;
+}
+@media screen and (min-width: 992px){
+    .nav-link::before {
+        left: 0.5rem;
+    }
+}
+/* end navbar  */
+/* start header   */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/introoooooooooooooooooooooooooooo.jpg );
+    background-size: cover;
+    background-position: center center;
+}
+header h1 {
+    font-size: 4rem;
+}
+.anim-text::before {
+    content: "";
+    animation: moving-text 5s linear  infinite alternate;
+    text-transform: capitalize;
+}
+
+/* Full stack  */
+@keyframes moving-text {
+    0% {
+        content: "|";
+    }
+    3% {
+        content: "F|";
+    }
+    5% {
+        content: "Fu|";
+    }
+    8% {
+        content: "Ful|";
+    }
+    10% {
+        content: "Full|";
+    }
+    13% {
+        content: "Full |";
+    }
+    15% {
+        content: "Full S|";
+    }
+    18% {
+        content: "Full St|";
+    }
+    20% {
+        content: "Full Sta|";
+    }
+    23% {
+        content: "Full Stac|";
+    }
+    25% {
+        content: "Full Stack d|";
+    }
+    28% {
+        content: "Full Stack de|";
+    }
+    30% {
+        content: "Full Stack dev|";
+    }
+    33% {
+        content: "Full Stack deve|";
+    }
+    35% {
+        content: "Full Stack devel|";
+    }
+    38% {
+        content: "Full Stack develo|";
+    }
+    40% {
+        content: "Full Stack develop|";
+    }
+    43% {
+        content: "Full Stack develope|";
+    }
+    45% {
+        content: "Full Stack developer|";
+    }
+    48% {
+        content: "Full Stack develope|";
+    }
+    50% {
+        content: "Full Stack develop|";
+    }
+    53% {
+        content: "Full Stack develo|";
+    }
+    55% {
+        content: "Full Stack devel|";
+    }
+    58% {
+        content: "Full Stack deve|";
+    }
+    60% {
+        content: "Full Stack dev|";
+    }
+    63% {
+        content: "Full Stack de|";
+    }
+    65% {
+        content: "Full Stack d|";
+    }
+    68% {
+        content: "Full Stack |";
+    }
+    70% {
+        content: "Full Stack|";
+    }
+    73% {
+        content: "Full Sta|";
+    }
+    75% {
+        content: "Full St|";
+    }
+    78% {
+        content: "Full S|";
+    }
+    80% {
+        content: "Full |";
+    }
+    83% {
+        content: "Full|";
+    }
+    85% {
+        content: "Ful|";
+    }
+    90% {
+        content: "Fu|";
+    }
+    100% {
+        content: "|";
+    }
+}
+/* end header  */
+/* start about  */
+.progress {
+    height: 0.7rem;
+}
+.w-40 {
+    width: 40%;
+}
+.w-60 {
+    width: 60%;
+}
+.w-85 {
+    width: 85%;
+}
+.w-90 {
+    width: 90%;
+}
+.heading-text::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    height: 3px;
+    background-color: var(--main-color);
+}
+
+
+.omar{
+
+     background-color:  var(--main-color) !important;
+}
+/* end about  */
+/* start services  */
+.icon {
+    width: 120px;
+    height: 120px;
+    border: 0.5rem solid var(--main-color);
+}
+.serv:hover .icon,
+.socila-icon:hover{
+    background-color: var(--main-color);
+    border-color:#cfe2ff !important;
+}
+.serv:hover .icon svg,
+.socila-icon:hover svg{
+    color: white;
+}
+/* end services  */
+/* start states  */
+.states {
+    background-image: linear-gradient(#b86f2ff3, #0078ffb3),url(../images/meeting-100890809-large.webp);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.state-icon {
+    width: 80px;
+    height: 80px;
+    border: 0.5rem solid #cfe2ff;
+}
+/* end states  */
+/* start portfolio  */
+.port-card:hover img {
+    transform: scale(1.3);
+}
+.main-text p:last-of-type{
+    font-size: 0.75rem;
+}
+.main-btn {
+    width: 30px;
+    height: 30px;
+}
+/* end portfolio  */
+/* start testimonial  */
+.testimonial,
+.contact {
+    background-image: linear-gradient(#0078ffb3, #b86f2ff3),url(../images/meeeeting.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.testimonial .item-icon {
+    width: 50px;
+    height: 50px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 5px;
+}
+.carousel-indicators [data-bs-target][class="active"] {
+    background-color: #000;
+}
+/* end testimonial  */
+/* start blog  */
+.card-body h6 {
+    width: fit-content;
+    font-size: 0.75rem;
+    transform: translateX(-50%);
+    top: -1rem;
+}
+.footer-content a:hover {
+    color: var(--main-color) !important;
+}
+/* end blog  */
+/* start contact  */
+form input,
+form textarea {
+    border: 1px solid #ced4da;
+    outline: none;
+}
+form :focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+}
+.socila-icon{
+    width: 35px;
+    height: 35px;
+}
+/* end contact  */
